@@ -7,4 +7,4 @@ const notesApp = combineReducers({
   editor
 })
 
-export default noteApp
+export default notesApp

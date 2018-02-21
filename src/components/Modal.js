@@ -1,7 +1,6 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import ReactModal from 'react-modal'
-import PropTypes from 'prop-types'
 import {closeEditor} from '../actions'
 
 const Modal = ({isOpen, onClose, children}) => (
@@ -22,7 +21,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    onClose: () => dispatch(closeEditor)
+    onClose: () => dispatch(closeEditor())
   }
 }
 

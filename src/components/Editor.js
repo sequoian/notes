@@ -16,14 +16,14 @@ const Editor = ({id, text, onChange}) => (
 
 const getOpenedNote = (notes, editor) => {
   const noteId = editor.noteId
-  if (!noteId) return undefined
+  if (!noteId) return {}
   return notes.find(note => (
     note.created === noteId
   ))
 }
 
 const mapStateToProps = state => {
-  const note = getOpenedNote()
+  const note = getOpenedNote(state.notes, state.editor)
   return {
     id: note.created,
     text: note.text
@@ -42,3 +42,5 @@ const EditorContainer = connect(
   mapStateToProps,
   mapDispatchToProps
 )(Editor)
+
+export default EditorContainer
