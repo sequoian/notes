@@ -1,6 +1,6 @@
 import React from 'react'
 import {connect} from 'react-redux'
-import {openEditor} from '../actions'
+import {openEditor, deleteNote} from '../actions'
 import Note from './Note'
 import moment from 'moment'
 
@@ -18,7 +18,7 @@ const formatTime = time => (
   })
 )
 
-const NoteList = ({notes, onNoteClick}) => (
+const NoteList = ({notes, onNoteClick, onNoteDelete}) => (
   <div>
     <ul>
       {notes.map(note => (
@@ -27,6 +27,7 @@ const NoteList = ({notes, onNoteClick}) => (
             text={formatText(note.text)}
             created={formatTime(note.created)}
             onClick={() => onNoteClick(note.created)}
+            onDelete={() => onNoteDelete(note.created)}
           />
         </li>
       ))}
@@ -44,6 +45,9 @@ const mapDispatchToProps = dispatch => {
   return {
     onNoteClick: id => {
       dispatch(openEditor(id))
+    },
+    onNoteDelete: id => {
+      dispatch(deleteNote(id))
     }
   }
 }
