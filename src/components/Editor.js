@@ -5,12 +5,11 @@ import {editNote} from '../actions'
 const Editor = ({id, text, onChange}) => (
   <div>
     <textarea
+      value={text}
       onChange={e => 
         onChange(id, e.target.value)
       }
-    >
-      {text}
-    </textarea>
+    />
   </div>
 )
 

@@ -1,6 +1,6 @@
 export const addNote = text => {
   return {
-    type: 'ADD_TASK',
+    type: 'ADD_NOTE',
     text: text || '',
     created: Date.now(),
   }

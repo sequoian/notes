@@ -1,5 +1,5 @@
 const defaultState = {
-  isOpen: true,
+  isOpen: false,
   noteId: null
 }
 
