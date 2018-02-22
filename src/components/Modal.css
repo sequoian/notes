@@ -1,14 +1,67 @@
 .modal {
   position: absolute;
-  width: 50vw;
-  left: 50%;
-  margin-left: -25vw;
-  height: 50vh;
-  top: 50%;
-  margin-top: -25vh;
-  border-radius: 7px;
-  border: 1px solid gray;
+  width: 100vw;
+  height: 100vh;
   background-color: white;
   overflow: auto;
   outline: none;
 }
+
+@media (min-width: 400px) and (min-height: 600px) {
+  .modal {
+    width: 80vw;
+    left: 20%;
+    margin-left: -10vw;
+    height: 80vh;
+    top: 20%;
+    margin-top: -10vh;
+    border-radius: 7px;
+    border: 1px solid gray;
+  }
+}
+
+@media (min-width: 900px) and (min-height: 600px) {
+  .modal {
+    width: 60vw;
+    left: 40%;
+    margin-left: -20vw;
+    height: 60vh;
+    top: 40%;
+    margin-top: -20vh;
+  }
+}
+
+@media (min-width: 900px) and (min-height: 600px) {
+  .modal {
+    width: 60vw;
+    left: 40%;
+    margin-left: -20vw;
+    height: 60vh;
+    top: 40%;
+    margin-top: -20vh;
+  }
+}
+
+@media (min-width: 1200px) and (min-height: 600px) {
+  .modal {
+    width: 40vw;
+    left: 60%;
+    margin-left: -30vw;
+    height: 40vh;
+    top: 60%;
+    margin-top: -30vh;
+  }
+}
+
+
+/* @media (min-width: 700px) {
+  .modal {
+    width: 50vw;
+    left: 50%;
+    margin-left: -25vw;
+    height: 50vh;
+    top: 50%;
+    margin-top: -25vh;
+  }
+} */
+
