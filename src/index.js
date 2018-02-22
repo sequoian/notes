@@ -4,13 +4,17 @@ import {createStore} from 'redux'
 import {Provider} from 'react-redux'
 import reducers from './reducers'
 import App from './components/App'
+import storage from './storage'
 import registerServiceWorker from './registerServiceWorker'
 
-const store = createStore(reducers)
+const persistedState = storage.loadState()
+const store = createStore(reducers, persistedState)
 
 // for testing
 store.subscribe(() => {
-  console.log(store.getState())
+  storage.saveState({
+    notes: store.getState().notes
+  })
 }) 
 
 ReactDOM.render(
