@@ -1,9 +1,10 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {openEditor, addNote} from '../actions'
+import './NewNote.css'
 
 const NewNote = ({onClick}) => (
-  <div>
+  <div className="new-note">
     <button
       onClick={onClick}
     >

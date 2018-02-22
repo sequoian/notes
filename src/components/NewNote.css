@@ -1,0 +1,23 @@
+.new-note {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid black;
+}
+
+.new-note button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  width: 100%;
+  font-size: 30px;
+  background-color: inherit;
+  cursor: pointer;
+  padding: 5px 0;
+  color: #ff002d;
+}
+
+.new-note button:hover {
+  background-color: whitesmoke;
+  color: #fb00ff;
+}

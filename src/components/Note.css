@@ -21,7 +21,7 @@ li:first-child {
   width: 100%;
   min-width: 0; /* prevents button from being cut off */
   cursor: pointer;
-  
+  padding: 5px 0;
 }
 
 .note-text {
@@ -49,7 +49,7 @@ li:first-child {
   cursor: pointer;
   color: #9e1b1b;
   font-size: 1em;
-  padding: 5px;
+  padding: 0 5px;
 }
 
 .note button:hover {
