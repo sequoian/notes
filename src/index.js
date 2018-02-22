@@ -10,7 +10,6 @@ import registerServiceWorker from './registerServiceWorker'
 const persistedState = storage.loadState()
 const store = createStore(reducers, persistedState)
 
-// for testing
 store.subscribe(() => {
   storage.saveState({
     notes: store.getState().notes

@@ -10,7 +10,9 @@ const Modal = ({isOpen, onClose, children}) => (
     onRequestClose={onClose}
     appElement={document.getElementById('root')}
   >
-    <ModalBar />
+    <ModalBar 
+      onClose={onClose}
+    />
     {children}
   </ReactModal>
 )
