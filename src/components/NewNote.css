@@ -10,14 +10,13 @@
   -webkit-appearance: none;
   border: none;
   width: 100%;
-  font-size: 30px;
+  font-size: 1em;
   background-color: inherit;
   cursor: pointer;
-  padding: 5px 0;
-  color: #ff002d;
+  padding: 0.5em 0;
+  color: #0089ff;
 }
 
 .new-note button:hover {
   background-color: whitesmoke;
-  color: #fb00ff;
 }

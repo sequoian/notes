@@ -1,8 +1,7 @@
 .note {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid black;
-  font-size: 30px;
+  border-bottom: 1px solid #353535;
   padding: 0 10px;
   line-height: normal;  /* prevents bottom of letters from being cut off */
 }
@@ -12,7 +11,7 @@
 }
 
 li:first-child {
-  border-top: 1px solid black;
+  border-top: 1px solid #353535;
 }
 
 .note > div {
@@ -21,7 +20,7 @@ li:first-child {
   width: 100%;
   min-width: 0; /* prevents button from being cut off */
   cursor: pointer;
-  padding: 5px 0;
+  padding: 0.5em 0;
 }
 
 .note-text {
