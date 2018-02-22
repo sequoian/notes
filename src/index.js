@@ -6,6 +6,7 @@ import reducers from './reducers'
 import App from './components/App'
 import storage from './storage'
 import registerServiceWorker from './registerServiceWorker'
+import './reset.css'
 
 const persistedState = storage.loadState()
 const store = createStore(reducers, persistedState)

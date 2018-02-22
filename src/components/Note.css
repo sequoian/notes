@@ -1,0 +1,57 @@
+.note {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  font-size: 30px;
+  padding: 0 10px;
+  line-height: normal;  /* prevents bottom of letters from being cut off */
+}
+
+.note:hover {
+  background-color: whitesmoke;
+}
+
+li:first-child {
+  border-top: 1px solid black;
+}
+
+.note > div {
+  display: flex;
+  align-items: baseline;
+  width: 100%;
+  min-width: 0; /* prevents button from being cut off */
+  cursor: pointer;
+  
+}
+
+.note-text {
+  display: block;
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 5px;
+}
+
+.note-date {
+  color: #888;
+  font-size: 0.8em;
+}
+
+/* Delete button */
+
+.note button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  background-color: inherit;
+  margin-left: 15px;
+  cursor: pointer;
+  color: #9e1b1b;
+  font-size: 1em;
+  padding: 5px;
+}
+
+.note button:hover {
+  color: red;
+}

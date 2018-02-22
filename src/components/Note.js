@@ -1,15 +1,16 @@
 import React from 'react'
+import './Note.css'
 
 const Note = ({text, created, onClick, onDelete}) => (
-  <div>
+  <div className="note">
     <div onClick={onClick}>
-      <span>{text || 'Blank Note'}</span>
-      <span>{created}</span>
+      <span className="note-text">{text || 'Blank Note'}</span>
+      <span className="note-date">{created}</span>
     </div>
     <button
       onClick={onDelete}
     >
-      Delete
+      ×
     </button>
   </div>
 )

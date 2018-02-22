@@ -1,0 +1,9 @@
+.app {
+  font-family: sans-serif;
+}
+
+.app,
+textarea,
+button {
+  color: #353535
+}
