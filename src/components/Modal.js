@@ -2,6 +2,7 @@ import React from 'react'
 import {connect} from 'react-redux'
 import ReactModal from 'react-modal'
 import {closeEditor} from '../actions'
+import ModalBar from './ModalBar'
 
 const Modal = ({isOpen, onClose, children}) => (
   <ReactModal
@@ -9,6 +10,7 @@ const Modal = ({isOpen, onClose, children}) => (
     onRequestClose={onClose}
     appElement={document.getElementById('root')}
   >
+    <ModalBar />
     {children}
   </ReactModal>
 )

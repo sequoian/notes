@@ -9,6 +9,7 @@ const Editor = ({id, text, onChange}) => (
       onChange={e => 
         onChange(id, e.target.value)
       }
+      autoFocus
     />
   </div>
 )
