@@ -1,0 +1,18 @@
+.modal-bar {
+  position: relative;
+  padding: 18px;
+  background-color: #353535;
+}
+
+.modal-bar button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 30px;
+  background-color: inherit;
+  color: white;
+  cursor: pointer;
+}

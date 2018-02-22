@@ -3,9 +3,11 @@ import {connect} from 'react-redux'
 import ReactModal from 'react-modal'
 import {closeEditor} from '../actions'
 import ModalBar from './ModalBar'
+import './Modal.css'
 
 const Modal = ({isOpen, onClose, children}) => (
   <ReactModal
+    className="modal"
     isOpen={isOpen}
     onRequestClose={onClose}
     appElement={document.getElementById('root')}

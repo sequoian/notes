@@ -1,0 +1,14 @@
+.modal {
+  position: absolute;
+  width: 50vw;
+  left: 50%;
+  margin-left: -25vw;
+  height: 50vh;
+  top: 50%;
+  margin-top: -25vh;
+  border-radius: 7px;
+  border: 1px solid gray;
+  background-color: white;
+  overflow: auto;
+  outline: none;
+}

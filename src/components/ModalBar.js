@@ -1,11 +1,12 @@
 import React from 'react'
+import './ModalBar.css'
 
 const ModalBar = ({onClose}) => (
-  <div>
+  <div className="modal-bar">
     <button
       onClick={onClose}
     >
-      X
+      ×
     </button>
   </div>
 )
