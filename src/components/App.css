@@ -4,7 +4,7 @@
 
 .app {
   font-family: sans-serif;
-  font-size: 35px;
+  font-size: 20px;
 }
 
 .app,
@@ -19,4 +19,28 @@ h1 {
   padding: 0.5em 0;
   background-color: #353535;
   color: white;
+}
+
+@media (min-width: 576px) {
+  .app {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 768px) {
+  .app {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  .app {
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .app {
+    font-size: 40px;
+  }
 }
