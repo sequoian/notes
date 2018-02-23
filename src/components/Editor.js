@@ -1,9 +1,10 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {editNote} from '../actions'
+import './Editor.css'
 
 const Editor = ({id, text, onChange}) => (
-  <div>
+  <div className="editor">
     <textarea
       value={text}
       onChange={e => 

@@ -5,6 +5,9 @@
   background-color: white;
   overflow: auto;
   outline: none;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
 }
 
 @media (min-width: 400px) and (min-height: 600px) {
@@ -28,6 +31,7 @@
     height: 60vh;
     top: 40%;
     margin-top: -20vh;
+    font-size: 25px;
   }
 }
 
@@ -42,7 +46,7 @@
   }
 }
 
-@media (min-width: 1200px) and (min-height: 600px) {
+@media (min-width: 1600px) and (min-height: 600px) {
   .modal {
     width: 40vw;
     left: 60%;
@@ -50,18 +54,6 @@
     height: 40vh;
     top: 60%;
     margin-top: -30vh;
+    font-size: 30px;
   }
 }
-
-
-/* @media (min-width: 700px) {
-  .modal {
-    width: 50vw;
-    left: 50%;
-    margin-left: -25vw;
-    height: 50vh;
-    top: 50%;
-    margin-top: -25vh;
-  }
-} */
-
