@@ -9,11 +9,11 @@ import storage from './storage'
 import registerServiceWorker from './registerServiceWorker'
 
 
-const persistedState = storage.loadState()
+const persistedState = storage.loadState('noteState')
 const store = createStore(reducers, persistedState)
 
 store.subscribe(() => {
-  storage.saveState({
+  storage.saveState('noteState', {
     notes: store.getState().notes
   })
 }) 
