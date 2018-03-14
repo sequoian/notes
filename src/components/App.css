@@ -3,7 +3,7 @@
 }
 
 .app {
-  font-family: sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 20px;
 }
 
@@ -19,6 +19,7 @@ h1 {
   padding: 0.5em 0;
   background-color: #353535;
   color: white;
+  cursor: default;
 }
 
 @media (min-width: 576px) {
